@@ -45,4 +45,8 @@ fgp.add_child(folium.GeoJson(geojson_data, style_function=style_function))
 
 map.add_child(fgv)
 map.add_child(fgp)
+
+# adding controls for the different features on the map
+map.add_child(folium.LayerControl())
+
 map.save("map.html")
